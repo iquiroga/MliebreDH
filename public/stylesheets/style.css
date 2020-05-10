@@ -130,7 +130,6 @@ footer p {
 .end-footer {
   color: grey;
   font-size: small;
-  margin-left: 15px;
 }
 
 @media (min-width: 768px) {
