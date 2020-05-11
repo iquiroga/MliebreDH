@@ -92,20 +92,41 @@ hr {
   padding: 5px;
   position: absolute;
   right: 0;
+  transition: 300ms;
 }
 
 .product-inf {
   padding: 15px 10px;
 }
 
-.product-inf-size {
+.product-inf h3 {
   font-weight: 400;
+  font-size: 16px;
 }
 
-.product-inf-off {
+.product-inf h4 {
   color: #39b54a;
+  font-size: 15px;
   font-weight: 400;
   padding-left: 10px;
+}
+
+.product-inf p {  
+  font-size: 14px;
+  display: none;
+}
+
+.product:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.product:hover p{
+  display: flex !important;
+}
+
+.product:hover i{
+  transform: rotate(360deg);
+  box-shadow: 0 0 5px rgba(57, 181, 74, 0.5);
 }
 
 footer {
@@ -133,15 +154,14 @@ footer p {
 }
 
 @media (min-width: 768px) {
-  header{
+  header {
     padding-left: 30px;
-
   }
 
-  .search-container{
+  .search-container {
     margin-right: 30px;
   }
-  
+
   .search-container input {
     width: 90%;
   }
@@ -151,26 +171,25 @@ footer p {
     margin-left: 20px;
   }
 
-  .button-header{
-    display: none!important;
+  .button-header {
+    display: none !important;
   }
 
-  .container-navigation{
+  .container-navigation {
     display: flex;
   }
 
-  .navigation{
+  .navigation {
     margin: 15px 0;
     font-style: normal;
     font-size: 14px;
     padding: 0;
   }
 
-  .navigation a{
+  .navigation a {
     text-decoration: none;
     color: black;
   }
-  
 
   .subtitle-product {
     padding-left: 45px;
